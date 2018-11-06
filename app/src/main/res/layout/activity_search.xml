@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    tools:context="org.example.fyp.SearchActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/search_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/app_bar"/>
+
+    <TextView
+        android:id="@+id/heading_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="serif"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/search_field"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/heading_label"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="23dp"
+        android:hint="What do you have?"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/search_layout"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <ImageButton
+        android:id="@+id/search_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/search_field"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/circlebackgroundwhite"
+        android:padding="15dp"
+        app:srcCompat="@drawable/ic_searchs_black_24dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/result_list"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/search_field"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="40dp"
+        android:textColorHint="@color/colorAccent"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

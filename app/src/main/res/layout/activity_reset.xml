@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context="org.example.fyp.ResetActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="210dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/logo" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/simpleTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Forgot Password?"
+                android:textColor="?android:attr/colorButtonNormal"
+                android:textSize="26sp"
+                android:textStyle="bold" /> <!--center horizontal gravity-->
+
+            <TextView
+                android:id="@+id/simpleTextViews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:paddingLeft="20dp"
+                android:text="Please enter your registered email below"
+                android:textColor="?android:attr/colorButtonNormal"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/editTextResetEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="15dp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:textStyle="normal|bold" />
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="7dp"
+                android:background="@drawable/rounded_button"
+                android:text="RESET PASSWORD"
+                android:textAllCaps="false"
+                android:textColor="@color/colorMain"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <Button
+                android:id="@+id/buttonback"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_button"
+                android:layout_margin="7dp"
+                android:layout_gravity="center"
+                android:text="BACK"
+                android:textColor="@color/colorMain"
+                android:textSize="16sp"
+                android:textStyle="normal|bold" />
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+

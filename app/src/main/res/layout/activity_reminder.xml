@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorMain"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:weightSum="1"
+    tools:context="org.example.fyp.ReminderActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/reminder_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@color/app_bar" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="          Please select your date first:"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="323dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+
+
+    <Button
+        android:id="@+id/createbtn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_button"
+        android:text="Create" />
+
+    <Button
+        android:id="@+id/viewbtn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_button"
+        android:text="View" />
+
+    <Button
+        android:id="@+id/deletebtn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_button"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/searchbtn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_button"
+        android:text="Search" />
+
+
+</LinearLayout>
